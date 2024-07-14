@@ -8,7 +8,7 @@ df = df.with_columns(
     pl.concat_str(
         [
             pl.col("Value, A"),
-            pl.col("Value\"\" B"), # xlsx转csv时，一个双引号转义为两个双引号
+            pl.col("Value\" B"), # Polars 1.0版本“Change default engine for read_excel to "calamine"”，即默认不再转xlsx2csv再读取csv
             pl.col("Value C"),
         ],
         separator=", ",

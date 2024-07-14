@@ -5,7 +5,7 @@ Excel表格处理需求：按ID列将行合并，并使用换行符连接合并�
 Polars与DuckDB是两个快速工具。
 
 ## Polars
-Polars可直接读取xlsx文件。
+Polars可直接读取xlsx文件。默认通过fastexcel使用Calamine库来读取xlsx。
 
 ```
 df_csv = pl.read_excel('demo.xlsx')

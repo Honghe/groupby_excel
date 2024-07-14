@@ -1,3 +1,4 @@
 polars
-xlsx2csv
+# xlsx2csv，Change default engine for read_excel to "calamine"
+fastexcel
 xlsxwriter
