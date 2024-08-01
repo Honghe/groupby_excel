@@ -8,11 +8,11 @@ Polars与DuckDB是两个快速工具。
 Polars可直接读取xlsx文件。默认通过fastexcel使用Calamine库来读取xlsx。
 
 ```
-df_csv = pl.read_excel('demo.xlsx')
-print(df_csv)
+df = pl.read_excel('demo.xlsx')
+print(df)
 ```
 
-DataFrame.group_by():
+使用`DataFrame.group_by()`:
 
 ```
 df = pl.DataFrame(
